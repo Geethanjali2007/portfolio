@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111827;
+    color:white;
+}
+
+/* Navbar */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* Home Section */
+.home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:90vh;
+    padding:0 10%;
+}
+
+.content{
+    width:50%;
+}
+
+.content h3{
+    font-size:28px;
+}
+
+.content h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.content h2{
+    font-size:32px;
+}
+
+.content span{
+    color:#00e5ff;
+}
+
+.content p{
+    margin:20px 0;
+    line-height:1.6;
+}
+
+.social-icons a{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    border:2px solid #00e5ff;
+    border-radius:50%;
+    color:#00e5ff;
+    text-decoration:none;
+    margin-right:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#00e5ff;
+    color:black;
+    padding:12px 25px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Image */
+.image img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    border:5px solid #00e5ff;
+    box-shadow:0 0 30px #00e5ff;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#00e5ff;
+}
+
+.box-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.box{
+    background:#1f2937;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:50px;
+    }
+
+    .content{
+        width:100%;
+    }
+
+    .content h1{
+        font-size:40px;
+    }
+
+    .image img{
+        width:220px;
+        height:220px;
+        margin-bottom:30px;
+    }
+
+    nav{
+        display:none;
+    }
+}
